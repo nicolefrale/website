@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talks | nicolefrale.com</title>
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    ><style>
+    <style>
+        body {
+            background-color: #000;
+        }
+
         .social_item svg {
             width: 25px;
         }
@@ -26,121 +30,140 @@
             stroke: #cacaca;
             color: #cacaca !important;
         }
+
+        .bg-container {
+            background-color: #141414;
+        }
     </style>
 
 </head>
 
-<body>
+<body class="text-white">
     <main>
-        <section class="py-5 text-center container">
+        <section class="py-5 text-center bg-container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" width="30px">
-                            <path fill-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" clip-rule="evenodd" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                            width="30px">
+                            <path fill-rule="evenodd"
+                                d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                                clip-rule="evenodd" />
                         </svg>
                         <span>Talks</span>
                     </h1>
-                    <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    <p class="lead">Something short and leading about the collection below—its contents, the
                         creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
                         entirely.</p>
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
+        <div class="album py-5 border-top border-secondary">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm border-secondary bg-container">
                             <img src="static/images/pycon-charlas-2022.jpg" class="card-img-top" width="100%" />
-                            <div class="card-body">
-                                <p class="card-text">Aquí va la descripción de las PyConCharlas</p>
+                            <div class="card-body border-top border-secondary">
+                                <p class="card-text">Talk given at PyCon US, in the Spanish section, in which the main
+                                    topic is the ArcPy library and map algebra.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <a href="https://www.youtube.com/watch?v=b-K4Iv55csU" target="_blank"
-                                            class="btn btn-sm btn-outline-secondary">View</a>
+                                            class="btn btn-sm btn-outline-light">View</a>
                                     </div>
-                                    <small class="text-muted">April 29, 2022</small>
+                                    <small class="text-white"><b>ES</b> • April 29, 2022</small>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm border-secondary bg-container">
                             <img src="static/images/mastergis-patch-2021.jpg" class="card-img-top" width="100%" />
-                            <div class="card-body">
-                                <p class="card-text">Y aquí la del Gisday en MasterClass</p>
+                            <div class="card-body border-top border-secondary">
+                                <p class="card-text">Workshop gave for the celebration of the GIS day being a MasterGIS
+                                    speaker, addressing topics as Patch Analyst and landscape.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://www.youtube.com/watch?v=RuOhSEMyxkc" target="_blank"
-                                            class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="https://youtu.be/RuOhSEMyxkc?t=1691" target="_blank"
+                                            class="btn btn-sm btn-outline-light">View</a>
                                     </div>
-                                    <small class="text-muted">November 24, 2021</small>
+                                    <small class="text-white"><b>ES</b> • November 24, 2021</small>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="static/images/MasterGis_fragilidad_2021.jpg" class="card-img-top" width="100%"/>
-                            <div class="card-body">
-                                <p class="card-text">Masterclass taller final.</p>
+                        <div class="card shadow-sm border-secondary bg-container">
+                            <img src="static/images/MasterGis_fragilidad_2021.jpg" class="card-img-top" width="100%" />
+                            <div class="card-body border-top border-secondary">
+                                <p class="card-text">Exclusive workshop imparted for the release of the "Ecology and
+                                    conservation with ArcGIS" course in which the areas of fragility were
+                                    determined.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://youtu.be/WW6m1JECOVE" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="https://youtu.be/WW6m1JECOVE?t=448" target="_blank"
+                                            class="btn btn-sm btn-outline-light">View</b></a>
                                     </div>
-                                    <small class="text-muted">June 10, 2021</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="static/images/MasterGis_Conservacion_2021.jpg" class="card-img-top" width="100%"/>                                                        
-                            <div class="card-body">
-                                <p class="card-text">Esta es la charla de MasterGis de conservacion.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="https://youtu.be/GO-da0Wc6tQ" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
-                                    </div>
-                                    <small class="text-muted">March 12, 2021</small>
+                                    <small class="text-white"><b>ES</b> • June 10, 2021</small>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="static/images/HelpGIS_2020.jpg" class="card-img-top" width="100%"/>                                                        
-                            <div class="card-body">
-                                <p class="card-text">Esta es la entrevista de HelpGIS.</p>
+                        <div class="card shadow-sm border-secondary bg-container">
+                            <img src="static/images/MasterGis_Conservacion_2021.jpg" class="card-img-top"
+                                width="100%" />
+                            <div class="card-body border-top border-secondary">
+                                <p class="card-text">Talk given for the anniversary of MasterGIS on How to participate
+                                    in successful conservation processes.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://youtu.be/mdnibWCygQE" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="https://youtu.be/GO-da0Wc6tQ?t=108" target="_blank"
+                                            class="btn btn-sm btn-outline-light">View</a>
                                     </div>
-                                    <small class="text-muted">October 24, 2020</small>
+                                    <small class="text-white"><b>ES</b> • March 12, 2021</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                   
+
+                    <div class="col">
+                        <div class="card shadow-sm border-secondary bg-container">
+                            <img src="static/images/HelpGIS_2020.jpg" class="card-img-top" width="100%" />
+                            <div class="card-body border-top border-secondary">
+                                <p class="card-text">Interview granted to HelpGIS in which the main topic was GIS
+                                    applications in environmental management.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://youtu.be/mdnibWCygQE?t=288" target="_blank"
+                                            class="btn btn-sm btn-outline-light">View</a>
+                                    </div>
+                                    <small class="text-white"><b>ES</b> • October 24, 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
         <div class="row social_item px-3 py-1 my-5 rounded">
             <div class="col-auto">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
             </div>
             <div class="col">
-                <a href="index.html" class="text-black text-decoration-none">
+                <a href="index.html" class="text-decoration-none">
                     Home
                 </a>
             </div>
