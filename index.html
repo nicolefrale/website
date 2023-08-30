@@ -20,9 +20,39 @@
             }
         }
 
-        body {
-            background-color: #000;
-        }
+        /*body {
+            background-image: url(https://images.unsplash.com/photo-1533699224246-6dc3b3ed3304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80);
+            filter: grayscale(1);
+        }*/
+
+.glass {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+        .module {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.module::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1534020252095-cbb690aeeb88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  filter: grayscale(100%);
+}
+.module-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+}
+.no-radius { border-radius: 0;}
+
 
         
         .social_item svg {
@@ -49,30 +79,34 @@
         }
     </style>
 </head>
-<body class="text-white">
-    <nav class="navbar bg-body-tertiary">
+<body>
+    <section class="module">
+        <section class="module-inside">
+    <nav class="navbar bg-body-tertiary glass no-radius border-start-0 border-end-0">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">
+          <a class="navbar-brand text-black" href="#">
             <img src="static\images\logoNFL_v1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Nicole Franco León
           </a>
         </div>
     </nav>
-    <main class="container mt-5">
+    <main class="container mt-5 glass p-5 text-dark">
         <div>
             <h1>
                 Hallo!,
                 I'm Nicole Franco Leon and I connect information with people through geographic data, focused on conservation
             </h1>
         </div>
-        <div>
+        <div class="mt-4">
             <div class="d-inline-flex gap-1">
-                <a href="about-me.html" class="btn active" aria-pressed="true">About me</a>
-                <a href="talks.html" class="btn active" aria-pressed="true">Talks</a>
+                <a href="about-me.html" class="btn btn-light">About me</a>
+                <a href="talks.html" class="btn btn-light">Talks</a>
             </div>
         </div>
 
     </main>
+        </section>
+    </section>
    
     
 </body>
